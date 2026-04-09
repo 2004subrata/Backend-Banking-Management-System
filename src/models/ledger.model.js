@@ -8,7 +8,7 @@ const ledgerSchema = new mongoose.Schema({
     index: true,
     immutable: true,
   },
-  ammount: {
+  amount: {
     type: Number,
     required: [true, "Ammount is required for creating a ledger entry"],
     immutable: true,
@@ -23,7 +23,7 @@ const ledgerSchema = new mongoose.Schema({
   type: {
     type: String,
     enum: {
-      value: ["CREDIT", "DEBIT"],
+      values: ["CREDIT", "DEBIT"],
       message: "Type can be either CREDIT or DEBIT",
     },
     required: [true, "Ledger type is required"],
