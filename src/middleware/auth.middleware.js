@@ -1,6 +1,10 @@
 const userModel = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 
+/**
+ * - Middleware
+ * - User authentication
+ */
 async function authMiddleware(req, res, next) {
   const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
   if (!token) {
@@ -23,6 +27,10 @@ async function authMiddleware(req, res, next) {
   }
 }
 
+/**
+ * - Middleware
+ * - System user authentication
+ */
 async function authSystemUserMiddleware(req, res, next) {
   const token = req.cookies.token || req.headers.authorization?.split(" ")[1];
   if (!token) {
