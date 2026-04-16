@@ -24,6 +24,8 @@ A robust, production-ready **Ledger System** backend built with **Node.js**, **E
 - [Data Models](#-data-models)
 - [Error Handling](#-error-handling)
 - [Contributing](#-contributing)
+- [Support](#-support)
+
 
 
 ---
@@ -495,6 +497,12 @@ Contributions are welcome! Please follow these steps:
 Please ensure your code is well-commented and follows the existing conventions of the project.
 
 
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a ⭐ on GitHub!
 
 ---
 
